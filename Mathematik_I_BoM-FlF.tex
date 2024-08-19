@@ -1,0 +1,54 @@
+\documentclass[11,leqno,fleqn]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{tcolorbox}
+\usepackage{TikZ}
+\usepackage{wrapfig}
+
+
+\graphicspath{{Figures/}}
+
+\setlength{\parindent}{0mm}
+
+\newtheoremstyle{DefinitionsAndTheorems}{7pt}{3pt}{}{}{\bfseries}{}{\newline}{\thmname{#1} \thmnumber{#2}: \thmnote{#3.}}
+\theoremstyle{DefinitionsAndTheorems}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Satz}[section]
+
+\newtheoremstyle{ExamplesAndExercises}{7pt}{3pt}{}{}{\bfseries}{}{ }{\thmname{#1} \thmnumber{#2} \thmnote{(#3)}}
+\theoremstyle{ExamplesAndExercises}
+\newtheorem{xmpl}{Beispiel}[chapter] % Dies wird unten mit newenvironment umgedeutet zwecks Kreis als Schlusssymbol
+\newtheorem{exercise}{Übung}[section]
+
+% Siehe newtheorem xmpl ohne Kreis als Schlusssymbol
+\newenvironment{example}[1]{\begin{xmpl}#1}{\hfill $^\bigcirc$ \end{xmpl}}
+
+% Beweis-Umgebung mit q.e.d.-Box und ohne Eingabe von "Beweis"; heisst prove, da proof reserviert;
+\newenvironment{prove}{\begin{proof}[Beweis]}{\end{proof}}
+
+% Lernzielumgebung
+\newenvironment{lernziele}{\subsubsection*{Lernziele}\begin{itemize}}{\end{itemize}}
+
+%***********
+%\includeonly{}
+%***********
+
+\title{Mathematik I}
+\author{\copyright Mathias Bosshardt und Franziska Flegel}
+\date{Herbst 2024}
+
+\begin{document}
+\maketitle
+
+\frontmatter
+\tableofcontents  %\listoftables  \listoffigures
+
+\mainmatter
+\include{Einfuehrung}
+\include{Brueckenkapitel}
+
+\end{document} 
