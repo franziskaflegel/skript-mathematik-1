@@ -101,6 +101,94 @@ Manchmal bringt ausklammern einen Vorteil!
 \end{example}
 
 \subsection{Primfaktoren, ggT und kgV}
+Sowohl der Zahlentheorie als auch in der Bruchrechnung spielen Primfaktoren, grösste gemeinsame Teiler und kleinste gemeinsame Vielfache eine Rolle.
+So ist z.B. der Hauptnenner zweier Brüche das kleinste gemeinsame Vielfache der ursprünglichen Nenner dieser Brüche.
+
+\begin{defn}{Kleinstes gemeinsames Vielfaches (kgV)}
+	Für zwei natürlichen Zahlen $a$ und $b$ ist das kleinste gemeinsame Vielfache $\kgV{a}{b}$ die kleinste natürliche Zahl $n$, die sowohl Vielfaches von $a$ als auch von $b$ ist.
+\end{defn}
+\begin{example}
+	Das kleinste gemeinsame Vielfache der Zahlen 4 und 6 ist 12, geschrieben: $\kgV{4}{6}=12$\,.
+	Dieses Wissen ist hilfreich, wenn ich z.B. die Brüche $\frac{1}{4}$ und $\frac{1}{6}$ addieren möchte:
+	\begin{align*}
+		\frac{1}{4} + \frac{1}{6} = \frac{3}{12} + \frac{2}{12} = \frac{5}{12}\, .
+	\end{align*}
+	Als gemeinsamen Nenner habe ich den Hauptnenner, also das kleinste gemeinsame Vielfache der ursprünglichen Nenner gewählt.
+\end{example}
+
+
+Um das kleinste gemeinsame Vielfache zweier Zahlen zu bestimmen, ist es wiederum hilfreich, diese Zahlen in ihre Primfaktoren zerlegen zu können.
+
+\begin{defn}{Primfaktor}
+	Für eine natürliche Zahl $n$ heisst die Zahl $p$ Primfaktor von $n$,
+	\begin{itemize}\setlength\itemsep{0pt}
+		\item wenn $p$ ein Teiler von $n$ ist und
+		\item $p$ eine Primzahl ist.
+	\end{itemize}
+\end{defn}
+
+\begin{example}
+	\begin{align*}
+		48 \,=\, 2\cdot 2\cdot 2\cdot 2\cdot 3 \,=\, 2^4 \cdot 3
+	\end{align*}
+\end{example}
+\begin{example}
+	\begin{align*}
+		(12\cdot 5)^2 \,=\, (2^2 \cdot 3 \cdot 5)^2 \,=\, 2^4 \cdot 3^2 \cdot 5^2
+	\end{align*}
+\end{example}
+
+Das kleinste gemeinsame Vielfache der Zahlen $a$ und $b$ erhält man nun, wenn man z.B. die erste Zahl, also $a$, mit denjenigen Primfaktoren von $b$ multipliziert, die in $a$ \glqq fehlen\grqq.
+Natürlich funktioniert das auch andersherum, wenn man $b$ mit denjenigen Primfaktoren von $a$ multipliziert, die in $b$ \glqq fehlen\grqq.
+\begin{example}
+	\begin{align*}
+		6 &= 2 \cdot 3\\
+		4 &= 2^2
+		\intertext{In der 6 fehlt eine 2, weil die 2 dort nur mit Potenz 1 auftaucht statt mit Potenz 2 wie in der 4.}
+		\Rightarrow \kgV{6}{4} &= 6\cdot 2 = 2^2 \cdot 3 = 12
+	\end{align*}
+\end{example}
+\begin{example}
+	\begin{align*}
+		18 &= 2 \cdot 3^2\\
+		24 &= 2^3 \cdot 3
+		\intertext{In der 18 fehlen noch zwei 2en, weil dort die 2 nur mit Potenz 1 auftaucht.
+		In der 24 taucht die 2 aber mit Potenz 3 auf.}
+		\Rightarrow \kgV{18}{24} &= 18\cdot 2^2 = 2^3 \cdot 3^2 = 72
+	\end{align*}
+\end{example}
+
+Für z.B. das Kürzen von Brüchen ist es wiederum praktisch, den grössten gemeinsamen Teiler zu kennen.
+
+\begin{defn}{Grösster gemeinsamer Teiler (ggT)}
+	Für zwei natürlichen Zahlen $a$ und $b$ ist der grösste gemeinsame Teiler $\ggT{a}{b}$ diejenige natürliche Zahl $m$, die sowohl $a$ und $b$ teilt und für die gilt:
+	Jeder gemeinsame Teiler von $a$ und $b$ ist kleiner oder gleich $m$.
+\end{defn}
+\begin{example}
+	Der grösste gemeinsame Teiler der Zahlen 45 und 75 ist 15, geschrieben: $\ggT{45}{75}=15$\,.
+	Dieses Wissen ist hilfreich, wenn ich z.B. den Bruch $\frac{45}{75}$ effizient kürzen möchte:
+	\begin{align*}
+		\frac{45}{75} = \frac{15\cdot 3}{15\cdot 5} = \frac{3}{5}\, .
+	\end{align*}
+\end{example}
+
+Den grössten gemeinsamen Teiler zweier Zahlen erhält man, indem man alle Primfaktoren, die in beiden Zahlen vorkommen multipliziert.
+Kommt ein Primfaktor mehrmals vor, so nimmt man die kleinste Potenz, die in beiden vorkommt.
+\begin{example}
+	\begin{align*}
+		24 &= 2^3 \cdot 3\\
+		36 &= 2^2 \cdot 3^2
+		\intertext{Die 2 kommt in der 24 mit Potenz 3, in der 36 aber nur in der Potenz 2 vor.
+		Also kommt sie im ggT nur mit Potenz 2 vor.
+		Die 3 kommt in der 36 mit Potenz 2, aber ind er 24 nur mit Potenz 1 vor.
+		Also kommt sie im ggT nur mit Potenz 1 vor.}
+		\Rightarrow \ggT{24}{36} &= 2^2 \cdot 3 = 12\, .
+	\end{align*}
+
+\end{example}
+
+
+
 
 \subsection{Brüche kürzen und erweitern}
 
