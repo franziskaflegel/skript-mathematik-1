@@ -110,14 +110,36 @@ Manchmal bringt ausklammern einen Vorteil!
 
 \subsection{Betrag einer Zahl}
 
+Den Betrag einer Zahl kann man sich als ihren Abstand zum Nullpunkt vorstellen, siehe Abbildung \ref{fig:absoluteValue}.
+\begin{figure}[H]
+ \vspace{.5cm}
+ \centering
+ \includegraphics[width=.8\linewidth]{absoluteValue}
+ \caption{Der Betrag von sowohl der Zahl 5 als auch der Zahl -5 ist gleich 5.}
+ \label{fig:absoluteValue}
+ \vspace{.5cm}
+\end{figure}
+
+Mathematisch sauber kann man den Betrag so definieren:
+
 \begin{defn}{Betrag einer Zahl}
 		Für eine Zahl $a$ ist der Betrag der Zahl
 		\[
 			|a|=\left\{\begin{array}{ll} a, & a\ge 0 \\
-         -a, & a<0\end{array}\right.
+		 -a, & a<0\end{array}\right.
 		\]
 \end{defn}
 
+\begin{example}
+	Vervollständige die Tabelle:\\~\\
+	\bgroup
+	\def\arraystretch{1.5}
+		\begin{tabularx}{\textwidth}{|X||p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|}\hline
+			\centering $a$ & \centering $-2$ & \centering $-1.5$ & \centering $-1$ & \centering $-0.5$ & \centering 0 & \centering $0.5$ & \centering 1 & \centering $1.5$ & \hspace{.4cm}2\\\hline
+			\centering $|a|$ & & & & & & & & & \\\hline
+		\end{tabularx}
+	\egroup
+\end{example}
 
 \section{Terme}
 \subsection*{Auswerten}
