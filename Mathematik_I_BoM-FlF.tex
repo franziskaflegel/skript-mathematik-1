@@ -5,13 +5,27 @@
 \usepackage{amsthm}
 \usepackage{graphicx}
 \usepackage{tabularx}
-\usepackage{tcolorbox}
 \usepackage{tikz}
-\usepackage{wrapfig}
 \usepackage{hyperref}
-
-
+\usepackage{wrapfig}
 \graphicspath{{figures/}}
+
+\usepackage{tcolorbox}
+\newtcolorbox{defn}[2][]{colback=green!10!white,
+colframe=green!70!black,
+width=.9\linewidth,
+before=\par\smallskip\centering,
+after=\par,
+title=#2,
+#1}
+
+\newtcolorbox{law}[2][]{colback=red!10!white,
+colframe=red!70!black,
+width=.97\linewidth,
+before=\par\smallskip\centering,
+after=\par,
+title=#2,
+#1}
 
 \setlength{\parindent}{0mm}
 
