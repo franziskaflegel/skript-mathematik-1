@@ -2,6 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
+\usepackage{enumerate}
 \usepackage{units}
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -29,6 +30,11 @@
 	\begin{tikzpicture}
 	\draw[step=0.5cm,color=gray!50] (0,0) grid (#2 cm ,#3 cm);
 	\node[anchor=north west] at (0,#3-.5) {#1};
+	\end{tikzpicture}}
+\newcommand{\kariertTop}[3][]{
+	\begin{tikzpicture}
+	\draw[step=0.5cm,color=gray!50] (0,0) grid (#2 cm ,#3 cm);
+	\node[anchor=north west] at (0,#3) {#1};
 	\end{tikzpicture}}
     
 \usepackage{hyperref}
