@@ -630,3 +630,202 @@ Los geht's auf der nächsten Seite!
 \includegraphics[width=.4\linewidth]{Cantor-diagonal-2}
 
 \newpage
+
+\section{Andere Zahlsysteme}
+Das verbreitete, von uns benutzte Dezimalsystem ist nur eine Möglichkeit, Zahlen zu beschreiben. Computer z.B. benutzen das Binärsystem.
+
+\subsection*{Das Dezimalsystem}
+Wir sind es gewohnt, Berechnungen im Dezimalsystem durchzuführen, in dem jede Zahl einer bestimmten Zusammensetzung der zehn verschiedenen Ziffern 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 entspricht. Jede Stelle \emph{vor} dem Komma (oder dem Dezimalpunkt) repräsentiert ein Vielfaches von 0 bis 9 der Potenzen von 10 mit positivem, ganzzahligem Exponenten (inklusive 0), und jede Stelle \emph{hinter} dem Komma repräsentiert ein Vielfaches von 0 bis 9 der \vspace{.6cm} \\ \vspace{.6cm} .\dotfill{}. \\  .\dotfill{}.
+
+\begin{example}[Zahlen im Dezimalsystem]\hfill
+    \begin{enumerate}
+        \item $\textbf{31} = 3 \cdot 10 + 1 = \textbf{3} \cdot 10^1 + \textbf{1} \cdot 10^0$
+        \item $2357 = 2 \cdot 1000 + 3 \cdot 100 + 5 \cdot 10 + 7 = 2 \cdot 10^3 + 3 \cdot 10^2 + 5 \cdot 10^1 + 7 \cdot 10^0$
+        \item $250.71 = 2 \cdot 100 + 5 \cdot 10 + 0 + 7 \cdot 0.1 + 1 \cdot 0.01 = 2 \cdot 10^2 + 5 \cdot 10^1 + 0 \cdot 10^0 + 7 \cdot 10^{-1} + 1 \cdot 10^{-2}$
+        \item $98437=$
+        \item $0.00321=$
+    \end{enumerate}
+\end{example}
+
+\subsection*{Das Binärsystem}
+Benutzen wir 2 anstatt 10 als Basis, erhalten wir das sogenannte binäre Zahlensystem, oder kurz Binärsystem. Die Ziffern im Binärsystem sind 1 und 0. Die Stellen einer Zahl im Binärsystem entsprechen Vielfachen von 0 bis 1 der Potenzen von 2.
+
+\begin{example}[Zahlen im Binärsystem]\hfill
+    \begin{enumerate}
+        \item $\textbf{110} = \textbf{1} \cdot 2^2 + \textbf{1} \cdot 2^1 + \textbf{0} \cdot 2^0 = 4 + 2 = 6$
+        \item $100110 = 1 \cdot 2^5 + 0 \cdot 2^4 + 0 \cdot 2^3 + 1 \cdot 2^2 + 1 \cdot 2^1 + 0 \cdot 2^0 = 32 + 4 + 2 = 38$
+        \item $11001001 = $
+    \end{enumerate}
+\end{example}
+
+
+\subsubsection*{Zählen mit den Fingern}
+
+\begin{minipage}{.5\textwidth}
+\includegraphics[width=0.5\linewidth]{BinaryHand}
+\end{minipage}
+\hspace*{.1\textwidth}
+\begin{minipage}{.4\textwidth}
+Man kann auch im Binärsystem mit den Fingern zählen. Dabei entspricht jeder Finger einer Zweierpotenz.
+    \begin{tabular}{clcl}
+        $\bullet$ & Finger oben & $\longrightarrow$ & \textbf{1} \\
+        $\bullet$ & Finger unten & $\longrightarrow$ & \textbf{0}
+    \end{tabular}
+\end{minipage}
+
+\begin{example} $ $ \\
+\begin{minipage}{.3\textwidth}
+\includegraphics[width=\linewidth]{BinaryHand2}
+\end{minipage}
+\hspace*{.1\textwidth}
+\begin{minipage}{.6\textwidth}
+Schauen wir uns beispielsweise diese Hand an:
+
+\hspace{.5cm}
+
+    \begin{tabular}{lcccccl}
+        Finger & Kleiner & Ring- & Mittel- & Zeige- & Daumen \\
+        Position & oben & oben & unten & oben & unten \\
+        Stele & 1 & 1 & 0 & 1 & 0 \\
+        Potenz & $2^4$ & $2^3$ & $2^2$ & $2^1$ & $2^0$ \\
+        Wert & 16 & 8 & 0 & 2 & 0 \\
+    \end{tabular}
+
+\hspace{.5cm}
+
+Wir wir alle Werte zusammenzählen, bekommen wir --- auf den Fingern einer Hand! Wie weit kann man mit beiden Händen zählen?
+\end{minipage}
+
+\end{example}
+
+\begin{exercise}
+	Übersetze ins angegebene Dezimalsystem:
+	\begin{enumerate}
+		\item
+			Übersetze ins Dezimalsystem: $10011100_{2}$
+		\item
+			Übersetze ins Binärsystem: $825_{10}$
+	\end{enumerate}
+\end{exercise}
+
+\newpage
+
+\subsection{Für Interessierte\ldots}
+Es gibt natürlich noch weitere Zahlensysteme. Als Basis könnten wir z.B. auch die 3 oder die 16 wählen.
+
+\subsubsection{Das Ternärsystem}
+Das System mit der Basis 3 heisst - analog zum Binärsystem mit der Basis 2 - Ternärsystem. Jedes Zahlsystem benötigt soviele Ziffern, wie der Wert der Basis ist. Es sind jeweils die Ziffern bis eine vor dem Basiswert, beginnend mit der Null. Das Binärsystem mit der Basis 2 benötigt zwei Ziffern, 0 und 1, das Dezimalsystem hat zehn Ziffern, nämlich 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, und das Ternärsystem entsprechend drei: 0, 1, 2.
+
+\begin{example}
+	Die Ziffern werden mit den Potenzen von 3 multipliziert.\\
+	$\textbf{201\textsubscript{3}} = \textbf{2} \cdot 3^2 + \textbf{0} \cdot 3^1 + \textbf{1} \cdot 3^0 = 9 + 1 = 10$
+\end{example}
+
+\begin{exercise}
+	Übersetze ins Dezimalsystem: $12021_{3}$
+	\vfill
+\end{exercise}
+
+\begin{minipage}[t]{.5\linewidth}
+	Es gab sogar mal einen Computer, der an der Universität Moskau entwickelt worden war und anstatt mit dem binären mit dem ternären System arbeitete! Anstatt Bits hatte dieser Computer Trits, und Bytes waren Trytes. Er hatte aber keine Vorteile gegenüber der damals bereits weit entwickelten binären Technologie, und wurd daher ab den 1970er-Jahren nicht mehr weiterentwickelt.
+\end{minipage}
+\hspace{.1\linewidth}
+\begin{minipage}[t]{.4\linewidth}
+	\vspace{-\ht\strutbox}
+	\includegraphics{Setun}
+\end{minipage}
+
+
+\subsubsection{Das Hexadezimalsystem}
+Das Hexadezimalsystem\footnote{\emph{Hexadezimal} ist ein griechisch-lateinisches Mischwort aus griech. \emph{hexa} für sechs und lat. \emph{decem} für zehn.} hat die Basis 16 und wird noch heute in der Informatik verwendet. Sein Nutzen liegt darin, dass 16 die vierte Potenz von 2 ist und damit ein Byte (= 8 Bits\footnote{\textbf{B}inary dig\textbf{its}, also Binärziffern}) mit nur einer Ziffer des Hexadezimalsystems dargestellt werden kann. Oftmals werden zum Beispiel Farben des \textcolor{red}{R}\textcolor{green}{G}\textcolor{blue}{B}-Systems am Computer mit diesem System codiert. Zur Basis 16 benötigen wir sechzehn Ziffern - aber halt, da reichen ja die Ziffern 0 bis 9 nicht mehr aus! Genau. Deshalb nehmen wir einfach noch die Buchstaben A, B, C, D, E, und F dazu. Dann entsprechen
+
+\begin{table}[H]
+	\caption{Bedeutung der "`Buchstaben-Ziffern"' im Hexadezimalsystem}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		A & 10 \\
+		B & 11 \\
+		C & 12 \\
+		D & 13 \\
+		E & 14 \\
+		F & 15 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{example}
+		$\textbf{2C7\textsubscript{16}} = \textbf{2} \cdot 16^2 + \textbf{12} \cdot 16^1 + \textbf{7} \cdot 16^0 = 256 + 192 + 1 = 455 $
+\end{example}
+
+Figur \ref{fig:Farbcodierung} zeigt, wie diese Codierung dann aussieht.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{Farbcodierung}
+	\caption{Die Codierung von RGB-Farben am Computer mit dem Hexadezimalsystem. (Quelle: Wikipedia)}
+	\label{fig:Farbcodierung}
+\end{figure}
+
+Grundlage dafür ist die additive Farbmischung (Videolink zum Thema am Rand) Üblich ist die Darstellung als Aneinanderreihung von drei jeweils zweistellig geschriebenen Hexadezimalzahlen nach dem Muster: \#\textcolor{red}{RR}\textcolor{green}{GG}\textcolor{blue}{BB}. Dabei steht der Wert 0 für eine komplett abgedunkelte = ausgeschaltete Farbesgeschaltete“ und 255 (FF) für volle Farbsättigung. Der Code \#FFFF00 ergibt Beispielsweise die Farbe Gelb, weil Rot (\#FF0000) mit Grün (\#00FF00) gemischt wird. Diese Art der Notation wird häufig für Webfarben zur farblichen Gestaltung von Internetseiten verwendet. \marginpar{\includegraphics{QR-Video-Additive-Farbmischung}}
+
+
+\section{Mengenrelationen}
+Wenn wir von Zahlenmengen und Mengen in einem viel allgemeineren Kontext sprechen, so können wir auch noch Beziehung von Mengen untereinander Darstellen. Zum Beispiel gehört die Menge der geraden Zahlen $P$ zu den natürlichen Zahlen, sie ist eine sogenannte Teilmenge davon. Diesen Begriffen wollen wir noch auf die Spur kommen.
+
+\subsection{Mengendiagramme (Venndiagramme)}
+Die Beziehungen zwischen 2 oder 3 Mengen stellen wir grafisch in sogenannten Venndiagrammen dar. Es sind Mengendiagramme, die man zu Ehren ihres Erfinders, John Venn, so benannt hat. Betrachten wir zum Beispiel die drei folgenden Mengen:
+\begin{align*}
+	A &= \{1,3,5,10,15\} \\
+	B &= \{1,5,10\} \\
+	C &= \{3, 15, 16 \}
+\end{align*}
+
+Die Mengen $A$ und $B$ haben einige Elemente gemeinsam, aber nicht alle, ebenso $A$ und $C$, aber $B$ und $C$ haben keine gemeinsamen Elemente. Grafisch wird das viel übersichtlicher:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\linewidth]{Venndiagramm}
+	\caption{Darstellung in einem Venndiagramm}
+\end{figure}
+
+Dafür können wir auch eine Symbolsprache einführen:
+
+\begin{law}{Mengenrelationen}
+	\begin{tabular}{r @{\hspace{5mm}:\hspace{5mm}} l}
+		$\subset$ & ist Teilmenge von \\
+		$\not\subset$ & ist keine Teilmenge von \\
+		$\backslash$ & ohne \\
+		$\cap$ & geschnitten mit \\
+		$\cup$ & vereinigt mit
+	\end{tabular}
+\end{law}
+
+\begin{exercise}
+	Ordne den folgenden Bildern die richtige Relation zu!
+	\vspace{3cm}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=.8\linewidth]{Venndiagramme}
+		\caption{Spezielle Relationen zwischen Mengen, dargestellt mit Venndiagrammen}
+	\end{figure}
+\end{exercise}
+
+Zeit für ein paar Übungsaufgaben!
+
+\paragraph{Aufgaben im Buch, Seite 17}
+$ $ \newline
+\begin{tabular}{|lll|}
+\hline
+\textbf{Grundlagen} & \textbf{Training} & \textbf{Extra}\\
+\hline
+117-123 & & \\
+\hline
+\end{tabular}
+
+\newpage
+
+% \section{Rechnen mit Potenzen}
+% Positive und negative Exponenten, Potenzgesetze, Zehnerpotenzen und wissenschaftliche Schreibweise, viele Übungen
+% 
+% Am Schluss: $(a+b)^n \ne a^n+b^n$
