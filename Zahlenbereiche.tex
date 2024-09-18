@@ -277,7 +277,7 @@ Was du aus diesem Kapitel noch mitnehmen solltest, ist:
 \begin{law}{Periodische Dezimalbrüche sind Brüche}
 	\label{law:periodicIsRational}
 	Ein periodischer Dezimalbruch lässt sich als Bruch aus zwei ganzen Zahlen darstellen.
-\end{law}~
+\end{law}
 
 \section{Reelle Zahlen}
 \begin{wrapfigure}{r}[1cm]{8cm}
@@ -352,7 +352,61 @@ Zusammenfassend können wir folgende Regeln festhalten:
 		\item die Wurzel aus einer natürlichen Zahl, die keine Quadratzahl ist,
 	\end{itemize}
 	{\bfseries so ist sie eine irrationale Zahl.}\\
-\end{law}
+\end{law}~\\
+
+Zuammen bilden die Menge der rationalen Zahlen $\Q$ und die Menge der irrationalen Zahlen die Menge der sogenannten reellen Zahlen $\mathbb{R}$.
+In dieser Menge, bzw. diesem Zahlenbereich gelten alle arithmetischen Rechengesetze von \pageref{law:arithmetic}.\\
+
+\begin{defn}{Reelle Zahlen}
+	Die Menge der reellen Zahlen $\R$ besteht aus allen rationalen und allen irrationen Zahlen.
+	Es handelt sich um die Menge aller möglichen Zahlen, die man auf der Zahlengeraden darstellen kann.
+\end{defn}
+
+\newpage
+\subsection{Die Zahlengerade}
+Erkläre anhand einer Zeichnung, wir man die Wurzel aus 2 auf der Zahlengerade darstellen kann:\\~\\
+ \includegraphics[width=.6\linewidth]{zahlengerade-Wurzel2}\\
+\vspace{7cm}
+
+
+
+\subsection{Für Interessierte: Gibt es Zahlen, die nicht reell sind?}
+Bisher wurden die Erweiterungen der Zahlenbereiche dadurch begründet, dass uns (d.h. der Menschheit) der jeweils alte Zahlenbereich nicht ausgereicht hat, um bestimmte Gleichungen zu lösen.
+Zum Beispiel konnten wir im Zahlenbereich der natürlichen Zahlen $\N$ die Gleichung $3 + x = 1$ nicht lösen.
+Also haben wir die ganzen Zahlen $\Z$ eingeführt und konnten die Gleichung nun durch $x = -2$ lösen.
+
+Dann hat uns z.B. die Lösung der Gleichung $3\cdot x = 1$ gefehlt -- also haben wir die rationalen Zahlen eingeführt und konnten nun $x = \frac{1}{3}$ setzen.
+Als nächsten wollten wir die Gleichung $x^2 = 2$ lösen und haben festgestellt, dass uns hierzu wiederum die rationalen Zahlen nicht ausreichen.
+Also haben wir unseren Zahlenbereich auf den Bereich der reellen Zahlen $\R$ erweitert und erhielten so die irrationale Zahl $\sqrt{2}$ als Lösung.
+Hier waren wir aber nicht ganz konsequent, denn die Gleichung
+\begin{align*}
+	x^2 = -1
+\end{align*}
+können wir immer noch nicht lösen.
+Egal, welche reelle Zahl wir für $x$ einsetzen, das Ergebnis von $x^2$ wird immer nicht nicht-negativ sein.
+
+Um die obige Gleichung zu lösen, wurde ein neuer Zahlenbereich eingeführt -- der Zahlenbereich der komplexen Zahlen $\C$.
+Dieser enthält u.a. die sogenannte \emph{imaginäre Einheit $\im$}, die genau so definiert ist, dass
+\begin{align*}
+	\im^2 = -1
+\end{align*}
+gilt.
+Die Vielfachen von $\im$, wie z.B. $2\im, 3\im\, 4\im, \ldots$ nennen wir \emph{imaginäre Zahlen} und die Kombinationen $x + \im y$ mit $x$ und $y$ aus $\R$ nennen wir komplexe Zahlen, also z.B.:
+\begin{align*}
+	1 + \im \in \C;\qquad 2 - \im \in \C;\qquad 0.25 + 1.75\im \in \C \qquad \text{etc.}
+\end{align*}
+
+Zur grafischen Darstellung der komplexen Zahlen reicht uns die Zahlengerade nicht mehr aus.
+Stattdessen verwenden wir die sogenannte \emph{komplexe Zahlenebene}, mit einem Koordinatensystem, dessen $x$-Achse die reellen Zahlen darstellt und dessen $y$-Achse die imaginären, siehe Abbildung \ref{fig:complexPlain}.
+Die komplexe Zahl $1 + \im$ entspricht dann einem Punkt mit den Koordinaten $(1\,|\,1)$, die komplexe Zahl $2 - \im$ entspricht dem Punkt $(2\,|\,-1)$.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\linewidth]{KomplexeEbene}
+	\caption{Die komplexe Zahlenebene.}
+	\label{fig:complexPlain}
+\end{figure}
+
+
 
 % \section{Kann man alle Zahlen als Bruch darstellen?}
 % Hier muss noch etwas Geschichte hin.
