@@ -1,0 +1,115 @@
+\chapter{Terme und Termumformungen}
+
+\subsection*{Auswerten}
+Mit $T(a,b)$ bezeichnen wir einen Term, der die Variablen $a$ und $b$ enthält. Setzt man anstelle von $a$ und $b$ Zahlen ein, z.B. 5 für $a$ und 3 für $b$, so schreiben wir $T(5,3)$.
+\begin{example}
+	Vervollständige die Tabelle für den Term $T(a,b) = a^2 + b$:\\~\\
+	\bgroup
+	\def\arraystretch{1.5}
+		\begin{tabularx}{\textwidth}{|X||p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|}\hline
+			\centering $a =$ & \centering $-1$ & \centering $-1$ & \centering $0$ & \centering $0$ & \centering $1$ & \centering $1$ & \centering $2$ & \centering $2$ & \hspace{.4cm}2\\\hline
+			\centering $b =$ & \centering $-1$ & \centering $2$ & \centering $-1$ & \centering $2$ & \centering $-1$ & \centering $2$ & \centering $-1$ & \centering $2$ & \hspace{.4cm}3\\\hline
+			\centering $T(a, b) =$ & \centering 2 & & & & & & & & \\\hline
+		\end{tabularx}
+	\egroup
+\end{example}
+
+\subsection*{Termumformungen}
+Zwei Terme $T_1$ und $T_2$ heissen \emph{äquivalent (gleichwertig)}, wenn alle möglichen Einsetzungen für die Variable(n) bei $T_1$ denselben Wert ergeben wie bei $T_2$.
+Man schreibt: $T_1 = T_2$.
+Einen Term umformen bedeutet:
+Man ersetzt ihn durch einen äquivalenten Term.
+Beim Umformen von Termen werden die arithmetischen Grundgesetze gebraucht.
+
+\begin{example}~
+\begin{itemize}\def\itemsep{0pt}
+ \item Der Term $a+a+b$ ist äquivalent zum Term $2a + b$.
+ \item Ebenso ist der Term $a\cdot (a + b)$ äquivalent zum Term $a^2 + ab$.
+\end{itemize}
+\end{example}
+
+\section{Multiplizieren von Termen}
+\begin{minipage}[t]{9cm}
+ Siehe Arbeitsauftrag vom 13.09.2024 und Übungsblatt vom 21.10.2024, bei ILIAS zu finden unter \emph{4. Terme und Termumformungen}
+\begin{itemize}
+ \item[$\rightarrow$] \emph{24-09-13-Arbeitsauftrag-TermeMultiplizieren} und
+ \item[$\rightarrow$] \emph{24-10-21-UebungTermeMultiplizieren}
+\end{itemize}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}[t]{5.5cm}
+~\\\vspace{-2cm}~\\
+ \includegraphics[width=4.5cm]{SechsFlaechen}
+\end{minipage}
+
+\section{Die Binomischen Formeln}
+
+Die \emph{Binomischen Formeln} benutzt man zum schnellen Umformen von Produkten aus Binomen.
+Sie stellen Merkformeln dar, die einerseits das Ausmultiplizieren von Klammerausdrücken erleichtern, andererseits aber auch die Faktorisierung von Termen (Umformung von bestimmten Summen und Differenzen in Produkte) erlauben.
+
+\begin{tcolorbox}[colback=blue!7!white,colframe=blue!60!black,title=Binomische Formeln]
+	\begin{tabbing}
+		$(a+b)^2$ \qquad \, \, \= $=$ \, \= $a^2+2ab+b^2$ \\
+		$(a-b)^2$ \qquad \, \, \= $=$ \, \= $a^2-2ab+b^2$ \\
+		$(a+b)(a-b)$ \> $=$ \> $a^2-b^2$
+	\end{tabbing}
+\end{tcolorbox} 
+
+\paragraph{Übungen} aus dem Unterricht findest du auf ILIAS unter:
+\begin{itemize}
+ \item[$\rightarrow$] \emph{24-10-23-Binomania-inklLoesungen}
+ \item[$\rightarrow$] \emph{24-10-23-UebungBinomischeFormeln}
+\end{itemize}
+
+
+\paragraph{Trinomische Formeln.}
+
+Es gibt auch trinomische Formeln: $(a+b+c)^2$. Kannst du dafür auch einen Ausdruck angeben?\\~\\
+\dotted{14.5}{2}\\~\\
+{\bfseries Tipp:} Du kannst entweder direkt mit dem Distributivgesetz umformen oder dir das Rechteckmodell vom Arbeitsauftrag vom 13.09. zu Hilfe nehmen, in dem du ein Bild von Richard Paul Lohse betrachtet hast. Finde dort ein Quadrat mit dem Flächeninhalt $(a+b+c)^2$ und zerlege es in Teilflächen.\\
+\begin{minipage}{5.5cm}
+ \includegraphics[width=5cm]{Lohse-leer}
+\end{minipage}
+\begin{minipage}{9cm}
+ ~\\~\\\dotted{9}{5}
+\end{minipage}
+
+\subsection*{Erweiterung}
+Mit dem \emph{Pascalschen Dreieck} kann man auch höhere Potenzen von Binomen schnell ausmultiplizieren:
+\[
+	(a+b)^3 =
+\]
+
+\newpage
+\section{Betrag einer Zahl}
+
+Den Betrag einer Zahl kann man sich als ihren Abstand zum Nullpunkt vorstellen, siehe Abbildung \ref{fig:absoluteValue}.
+\begin{figure}[H]
+ \vspace{.5cm}
+ \centering
+ \includegraphics[width=.8\linewidth]{absoluteValue}
+ \caption{Der Betrag von sowohl der Zahl 5 als auch der Zahl -5 ist gleich 5.}
+ \label{fig:absoluteValue}
+ \vspace{.5cm}
+\end{figure}
+
+Mathematisch sauber kann man den Betrag so definieren:
+
+\begin{defn}{Betrag einer Zahl}
+		Für eine Zahl $a$ ist der Betrag der Zahl
+		\[
+			|a|=\left\{\begin{array}{ll} a, & a\ge 0 \\
+		 -a, & a<0\end{array}\right.
+		\]
+\end{defn}
+
+\begin{example}
+	Vervollständige die Tabelle:\\~\\
+	\bgroup
+	\def\arraystretch{1.5}
+		\begin{tabularx}{\textwidth}{|X||p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|p{2.5em}|}\hline
+			\centering $a$ & \centering $-2$ & \centering $-1.5$ & \centering $-1$ & \centering $-0.5$ & \centering 0 & \centering $0.5$ & \centering 1 & \centering $1.5$ & \hspace{.4cm}2\\\hline
+			\centering $|a|$ & & & & & & & & & \\\hline
+		\end{tabularx}
+	\egroup
+\end{example}

@@ -28,6 +28,7 @@
 \usepackage[font=small,labelfont=bf, format=plain]{caption}
 
 \usepackage{tikz}
+\tikzset{mygrid/.style={line width=2pt, dash pattern=on 0mm off 5mm, line cap=round}}
 \newcommand{\kariert}[3][]{
 	\begin{tikzpicture}
 	\draw[step=0.5cm,color=gray!50] (0,0) grid (#2 cm ,#3 cm);
@@ -38,6 +39,14 @@
 	\draw[step=0.5cm,color=gray!50] (0,0) grid (#2 cm ,#3 cm);
 	\node[anchor=north west] at (0,#3) {#1};
 	\end{tikzpicture}}
+	
+\newcommand{\dotted}[2]{
+	\begin{tikzpicture}
+        % \draw[step=0.5cm,color=gray,mygrid] (0,0) grid (#1,#2);
+        \draw[step=0.5cm,color=gray,mygrid] (0,0) grid (#1 cm,#2 cm);
+    \end{tikzpicture}
+    }
+
     
 \usepackage{hyperref}
 \usepackage{wrapfig}
@@ -103,5 +112,6 @@ title=#2,
 \include{Einfuehrung}
 \include{Brueckenkapitel}
 \include{Zahlenbereiche}
+\include{TermeUndTermumformungen}
 
 \end{document} 
